@@ -1,0 +1,21 @@
+# Basically 'Different seasons' summary by Stephen King was used to calculate how many long and short words was used.
+text = '''
+King's first collection of novellas has a more dramatic than horrific bent.\
+Indeed, its first story inspired the popular film (and an obsession with Morgan Freeman’s voice): The Shawshank Redemption.\
+And while “Apt Pupil” and “The Breathing Method” could still very much be considered scary,\
+Different Seasons stands out for the lack of sinister supernatural beings or luridly horrific images that have become staples of some of the other Stephen King short stories.\
+'''
+listOfWords = text.split(' ')
+wordLength = 6
+shortWords = 0
+longWords = 0
+word = 0
+while word < len(listOfWords):
+    if len(listOfWords[word]) > wordLength:
+        longWords+=1
+    else:
+        shortWords+=1
+    word+=1
+
+print('Counting long words: {0:d}'.format(longWords))
+print('Counting short words: {0:d}'.format(shortWords))
