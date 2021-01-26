@@ -1,4 +1,4 @@
-#first question
+# kind of investment calculation
 initialCapital = 20000
 percent = 0.03
 maxTimeYears = 10
